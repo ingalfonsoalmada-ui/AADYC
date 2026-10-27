@@ -11,9 +11,10 @@
 <meta property="og:url" content="https://aadyc.com/">
 <meta property="og:title" content="AA Diseño y Construcción · La Paz, BCS">
 <meta property="og:description" content="Diseñamos, medimos y construimos tu obra en Baja California Sur. Un solo equipo, del terreno a las llaves.">
-<!-- Cuando tengas una foto aérea de obra: súbela como img/portada.jpg y activa esta línea -->
-<!-- <meta property="og:image" content="https://aadyc.com/img/portada.jpg"> -->
-<meta name="theme-color" content="#14212B">
+<meta property="og:image" content="https://aadyc.com/img/portada.jpg">
+<link rel="icon" type="image/png" href="img/icono.png">
+<link rel="apple-touch-icon" href="img/icono.png">
+<meta name="theme-color" content="#0A2540">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -24,6 +25,8 @@
   "@type": "GeneralContractor",
   "name": "AA Diseño y Construcción",
   "url": "https://aadyc.com/",
+  "logo": "https://aadyc.com/img/logo.png",
+  "image": "https://aadyc.com/img/portada.jpg",
   "telephone": "+52 612 157 3391",
   "address": {
     "@type": "PostalAddress",
@@ -44,12 +47,12 @@
 </script>
 
 <style>
-/* ============ COLORES: cámbialos aquí por los de tu logo ============ */
+/* ============ COLORES: tomados del logo (azul #004175) ============ */
 :root{
-  --marino:#14212B;      /* color principal (fondos oscuros, títulos) */
-  --acento:#0B6468;      /* botones y enlaces */
-  --acento-osc:#08484B;
-  --acento-claro:#7FD1CF;/* acento sobre fondo oscuro */
+  --marino:#0A2540;      /* color principal (fondos oscuros, títulos) */
+  --acento:#004175;      /* azul del logo: botones y enlaces */
+  --acento-osc:#002C52;
+  --acento-claro:#8CC4F0;/* acento sobre fondo oscuro */
   --arena:#F5F1EA;       /* fondo general */
   --arena-2:#E9E2D6;     /* fondo de secciones alternas */
   --linea:#DDD5C8;
@@ -92,7 +95,7 @@ header.sombra{box-shadow:0 4px 18px rgba(20,33,43,.08)}
 .barra{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:72px}
 .marca{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--marino)}
 .logo{width:46px;height:46px;border-radius:10px;background:var(--marino);color:var(--arena);display:grid;place-items:center;font-family:Archivo;font-weight:800;font-size:18px}
-.logo-img{height:46px;width:auto}
+.logo-img{height:54px;width:auto}
 .marca b{font-family:Archivo;font-weight:800;font-size:18px;display:block;line-height:1.1}
 .marca small{font-size:12px;color:var(--texto-2)}
 nav ul{list-style:none;margin:0;padding:0;display:flex;align-items:center;gap:24px}
@@ -150,7 +153,7 @@ nav a:hover{color:var(--acento)}
 .tarjeta:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(20,33,43,.10)}
 .tarjeta h3{font-size:21px;font-weight:700}
 .tarjeta p{color:var(--texto-2)}
-.tarjeta .icono{width:52px;height:52px;border-radius:12px;background:rgba(11,100,104,.10);display:grid;place-items:center}
+.tarjeta .icono{width:52px;height:52px;border-radius:12px;background:rgba(0,65,117,.10);display:grid;place-items:center}
 .tarjeta .icono svg{width:28px;height:28px;stroke:var(--acento)}
 .tarjeta a.mas{margin-top:auto;font-weight:600;text-decoration:none;padding-top:8px}
 .tarjeta.destacada{background:var(--marino);color:var(--arena);border-color:var(--marino)}
@@ -186,9 +189,9 @@ nav a:hover{color:var(--acento)}
 
 /* Video */
 .video .marco{aspect-ratio:16/9;max-width:980px;margin:36px auto 0}
-.play{position:absolute;inset:0;margin:auto;width:84px;height:84px;border-radius:50%;background:var(--acento);display:grid;place-items:center;box-shadow:0 0 0 0 rgba(127,209,207,.6);animation:pulso 2.2s infinite}
+.play{position:absolute;inset:0;margin:auto;width:84px;height:84px;border-radius:50%;background:var(--acento);display:grid;place-items:center;box-shadow:0 0 0 0 rgba(140,196,240,.6);animation:pulso 2.2s infinite}
 .play svg{width:32px;height:32px;fill:#fff;margin-left:4px}
-@keyframes pulso{0%{box-shadow:0 0 0 0 rgba(127,209,207,.55)}70%{box-shadow:0 0 0 22px rgba(127,209,207,0)}100%{box-shadow:0 0 0 0 rgba(127,209,207,0)}}
+@keyframes pulso{0%{box-shadow:0 0 0 0 rgba(140,196,240,.55)}70%{box-shadow:0 0 0 22px rgba(140,196,240,0)}100%{box-shadow:0 0 0 0 rgba(140,196,240,0)}}
 
 /* Proceso */
 .pasos{list-style:none;padding:0;margin:40px 0 0;display:grid;grid-template-columns:repeat(5,1fr);gap:20px;counter-reset:paso}
@@ -217,7 +220,7 @@ form h3{font-size:22px}
 .campo{display:grid;gap:6px}
 .campo label{font-weight:600;font-size:14px}
 .campo input,.campo select,.campo textarea{font:inherit;font-size:16px;padding:12px 14px;border:1px solid #C9BFAF;border-radius:10px;background:var(--arena);color:var(--marino);min-height:48px}
-.campo input:focus,.campo select:focus,.campo textarea:focus{outline:3px solid rgba(11,100,104,.25);border-color:var(--acento)}
+.campo input:focus,.campo select:focus,.campo textarea:focus{outline:3px solid rgba(0,65,117,.25);border-color:var(--acento)}
 .fila{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 @media (max-width:560px){.fila{grid-template-columns:1fr}}
 .nota{font-size:13px;color:var(--texto-2)}
@@ -252,9 +255,7 @@ footer b{color:var(--arena);font-family:Archivo;font-size:18px}
 <header id="encabezado">
   <div class="contenedor barra">
     <a href="#inicio" class="marca" aria-label="AA Diseño y Construcción, ir al inicio">
-      <!-- LOGO: sube tu logo como img/logo.png, borra el <span class="logo"> y activa la línea <img> -->
-      <span class="logo" aria-hidden="true">AA</span>
-      <!-- <img src="img/logo.png" alt="AA Diseño y Construcción" class="logo-img"> -->
+      <img src="img/logo.png" alt="" class="logo-img" width="45" height="54">
       <span><b>AA Diseño y Construcción</b><small>La Paz, Baja California Sur</small></span>
     </a>
     <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
@@ -294,42 +295,10 @@ footer b{color:var(--arena);font-family:Archivo;font-size:18px}
       </div>
     </div>
 
-    <!-- FOTO O VIDEO DE PORTADA: cuando tengas un video aéreo, cambia el SVG por:
-         <video src="video/portada.mp4" autoplay muted loop playsinline poster="img/portada.jpg"></video> -->
     <div class="marco aparece retraso-2" style="aspect-ratio:5/4">
-      <svg class="plano" viewBox="0 0 500 400" preserveAspectRatio="xMidYMid slice" aria-label="Ilustración: un dron levanta un terreno con puntos de control" role="img">
-        <defs>
-          <pattern id="cuad" width="25" height="25" patternUnits="userSpaceOnUse"><path d="M25 0H0V25" fill="none" stroke="#1F3442" stroke-width="1"/></pattern>
-          <linearGradient id="haz" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7FD1CF" stop-opacity="0"/><stop offset="1" stop-color="#7FD1CF" stop-opacity=".35"/></linearGradient>
-        </defs>
-        <rect width="500" height="400" fill="#14212B"/>
-        <rect width="500" height="400" fill="url(#cuad)"/>
-        <g fill="none" stroke="#2C4A5A" stroke-width="1.5">
-          <path d="M-10 300 C 80 270, 160 320, 260 290 S 420 250, 520 280"/>
-          <path d="M-10 260 C 90 230, 170 280, 270 250 S 420 210, 520 240"/>
-          <path d="M-10 220 C 100 190, 180 240, 280 210 S 420 170, 520 200"/>
-          <path d="M-10 180 C 110 150, 190 200, 290 170 S 420 130, 520 160"/>
-        </g>
-        <g fill="none" stroke="#7FD1CF" stroke-width="2.5" stroke-dasharray="7 6">
-          <path d="M120 120 L360 105 L390 300 L140 320 Z"/>
-          <path d="M200 160 h110 v90 h-110 z"/>
-        </g>
-        <g fill="#F2B544">
-          <circle class="punto" cx="120" cy="120" r="6"/><circle class="punto" cx="360" cy="105" r="6"/>
-          <circle class="punto" cx="390" cy="300" r="6"/><circle class="punto" cx="140" cy="320" r="6"/>
-          <circle class="punto" cx="200" cy="160" r="5"/><circle class="punto" cx="310" cy="250" r="5"/>
-        </g>
-        <rect class="escaneo" x="0" y="40" width="500" height="60" fill="url(#haz)"/>
-        <g class="dron" transform="translate(0,0)">
-          <g transform="translate(150,40)" fill="none" stroke="#F5F1EA" stroke-width="3">
-            <rect x="-14" y="-7" width="28" height="14" rx="4" fill="#F5F1EA"/>
-            <path d="M-14 -4 L-30 -14 M14 -4 L30 -14 M-14 4 L-30 14 M14 4 L30 14"/>
-            <ellipse cx="-30" cy="-14" rx="12" ry="3"/><ellipse cx="30" cy="-14" rx="12" ry="3"/>
-            <ellipse cx="-30" cy="14" rx="12" ry="3"/><ellipse cx="30" cy="14" rx="12" ry="3"/>
-          </g>
-        </g>
-      </svg>
-      <span class="pie">Aquí va tu video aéreo de obra</span>
+      <img src="img/portada.jpg" alt="Vista aérea con dron de la obra Patio Azul en La Paz, BCS: local, alberca y barda en construcción" width="1600" height="1200" fetchpriority="high">
+      <span class="estado">En obra</span>
+      <span class="pie">Vista aérea con dron · Patio Azul, La Paz</span>
     </div>
   </div>
 </section>
@@ -382,7 +351,7 @@ footer b{color:var(--arena);font-family:Archivo;font-size:18px}
         <a class="mas" href="#terreno">Ver cómo trabajamos →</a>
       </article>
       <article class="tarjeta destacada aparece retraso-2">
-        <div class="icono" style="background:rgba(127,209,207,.15)"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="stroke:var(--acento-claro)"><circle cx="5" cy="5" r="2.5"/><circle cx="19" cy="5" r="2.5"/><circle cx="5" cy="19" r="2.5"/><circle cx="19" cy="19" r="2.5"/><rect x="9" y="9" width="6" height="6" rx="1"/><path d="M7 7l2 2M17 7l-2 2M7 17l2-2M17 17l-2-2"/></svg></div>
+        <div class="icono" style="background:rgba(140,196,240,.15)"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="stroke:var(--acento-claro)"><circle cx="5" cy="5" r="2.5"/><circle cx="19" cy="5" r="2.5"/><circle cx="5" cy="19" r="2.5"/><circle cx="19" cy="19" r="2.5"/><rect x="9" y="9" width="6" height="6" rx="1"/><path d="M7 7l2 2M17 7l-2 2M7 17l2-2M17 17l-2-2"/></svg></div>
         <h3>Proyecto llave en mano</h3>
         <p>Medimos tu terreno, diseñamos, presupuestamos y construimos. Un responsable, un presupuesto y un calendario.</p>
         <a class="mas" href="https://wa.me/526121573391?text=Hola%2C%20vi%20su%20p%C3%A1gina%20web.%20Me%20interesa%20el%20proyecto%20completo%20llave%20en%20mano.">Quiero el proyecto completo →</a>
@@ -395,18 +364,8 @@ footer b{color:var(--arena);font-family:Archivo;font-size:18px}
 <section class="alterna" id="terreno">
   <div class="contenedor dos">
     <div class="marco aparece" style="aspect-ratio:16/11">
-      <!-- FOTO: ortofoto o modelo 3D real → <img src="img/ortofoto-levantamiento-la-paz-bcs.jpg" alt="Ortofoto de un terreno levantado con dron en La Paz, BCS" loading="lazy"> -->
-      <svg class="plano" viewBox="0 0 480 330" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Ilustración de un plano topográfico con curvas de nivel">
-        <rect width="480" height="330" fill="#14212B"/>
-        <g fill="none" stroke="#7FD1CF" stroke-opacity=".55" stroke-width="1.6">
-          <ellipse cx="240" cy="165" rx="40" ry="26"/><ellipse cx="240" cy="165" rx="80" ry="52"/>
-          <ellipse cx="240" cy="165" rx="125" ry="82"/><ellipse cx="240" cy="165" rx="175" ry="112"/>
-          <ellipse cx="240" cy="165" rx="230" ry="146"/>
-        </g>
-        <path d="M70 60 L420 75 L400 285 L90 270 Z" fill="none" stroke="#F2B544" stroke-width="2.5" stroke-dasharray="8 6"/>
-        <g fill="#F2B544"><circle class="punto" cx="70" cy="60" r="6"/><circle class="punto" cx="420" cy="75" r="6"/><circle class="punto" cx="400" cy="285" r="6"/><circle class="punto" cx="90" cy="270" r="6"/></g>
-      </svg>
-      <span class="pie">Aquí va una ortofoto real</span>
+      <img src="img/el-sargento-vista-aerea-dron.jpg" alt="Vista aérea con dron de la playa y los terrenos de El Sargento, BCS" width="1400" height="788" loading="lazy">
+      <span class="pie">Vuelo de dron · El Sargento, BCS</span>
     </div>
     <div>
       <p class="etiqueta aparece">Topografía y fotogrametría con dron</p>
@@ -445,8 +404,7 @@ footer b{color:var(--arena);font-family:Archivo;font-size:18px}
       <!-- OBRA 1 · Patio Azul -->
       <article class="obra aparece" data-tipo="construccion">
         <div class="marco">
-          <!-- FOTO → <img src="img/obras/patio-azul-render-local-y-alberca-la-paz.jpg" alt="Render del local para fiestas Patio Azul con su alberca, en La Paz, BCS" loading="lazy"> -->
-          <svg class="plano" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="400" height="300" fill="#1B2D39"/><rect x="60" y="90" width="170" height="120" fill="none" stroke="#7FD1CF" stroke-width="2"/><rect x="250" y="130" width="100" height="80" rx="6" fill="#0B6468" fill-opacity=".6" stroke="#7FD1CF" stroke-width="2"/><path d="M60 90 L145 50 L230 90" fill="none" stroke="#7FD1CF" stroke-width="2"/></svg>
+          <img src="img/obras/patio-azul-render-local-y-alberca-la-paz.jpg" alt="Render del local para fiestas Patio Azul con su jardín y alberca, en La Paz, BCS" width="880" height="648" loading="lazy">
           <span class="estado">En obra</span><span class="pie">Render · Patio Azul</span>
         </div>
         <div class="cuerpo">
@@ -461,8 +419,7 @@ footer b{color:var(--arena);font-family:Archivo;font-size:18px}
       <!-- OBRA 2 · Cocina -->
       <article class="obra aparece retraso-1" data-tipo="remodelacion">
         <div class="marco">
-          <!-- FOTO → <img src="img/obras/remodelacion-cocina-render-la-paz.jpg" alt="Render de una cocina en La Paz, BCS, con piso nuevo de 50 × 50 cm gris claro" loading="lazy"> -->
-          <svg class="plano" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="400" height="300" fill="#1B2D39"/><g stroke="#2C4A5A" stroke-width="2"><path d="M0 200 L400 200"/><path d="M0 240 L400 240M0 280 L400 280M80 200 L40 300M160 200 L140 300M240 200 L260 300M320 200 L360 300"/></g><rect x="60" y="110" width="280" height="90" fill="none" stroke="#7FD1CF" stroke-width="2"/><rect x="80" y="60" width="120" height="40" fill="none" stroke="#7FD1CF" stroke-width="2"/></svg>
+          <img src="img/obras/remodelacion-cocina-render-la-paz.jpg" alt="Render con medidas de una cocina remodelada en La Paz, BCS, con piso gris claro y cocina integral blanca" width="1200" height="578" loading="lazy">
           <span class="estado">En obra</span><span class="pie">Render · Cocina</span>
         </div>
         <div class="cuerpo">
@@ -477,9 +434,8 @@ footer b{color:var(--arena);font-family:Archivo;font-size:18px}
       <!-- OBRA 3 · Trazo El Sargento -->
       <article class="obra aparece retraso-2" data-tipo="topografia">
         <div class="marco">
-          <!-- FOTO → <img src="img/obras/trazo-topografico-hotel-el-sargento-bcs.jpg" alt="Vista aérea con dron del trazo de un hotel en El Sargento, BCS, con líneas de cal en el terreno" loading="lazy"> -->
-          <svg class="plano" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="400" height="300" fill="#1B2D39"/><g fill="none" stroke="#F5F1EA" stroke-width="2" stroke-dasharray="6 5"><rect x="50" y="60" width="80" height="60"/><rect x="150" y="60" width="80" height="60"/><rect x="250" y="60" width="90" height="60"/><rect x="80" y="160" width="100" height="70"/><rect x="210" y="160" width="110" height="70"/></g><g fill="#F2B544"><circle class="punto" cx="50" cy="60" r="5"/><circle class="punto" cx="230" cy="120" r="5"/><circle class="punto" cx="320" cy="230" r="5"/><circle class="punto" cx="80" cy="230" r="5"/></g></svg>
-          <span class="pie">Trazo · El Sargento</span>
+          <img src="img/obras/trazo-topografico-hotel-el-sargento-bcs.jpg" alt="Plano de trazo de edificio de un hotel en El Sargento, BCS, con los puntos de trazo numerados" width="1400" height="1062" loading="lazy" style="background:#fff;object-fit:contain">
+          <span class="pie">Plano de trazo · El Sargento</span>
         </div>
         <div class="cuerpo">
           <p class="etiqueta">Topografía · Trazo de obra</p>
@@ -497,14 +453,10 @@ footer b{color:var(--arena);font-family:Archivo;font-size:18px}
 <section class="oscuro video" id="video">
   <div class="contenedor">
     <p class="etiqueta aparece">Video</p>
-    <h2 class="titulo aparece">Del render a la obra</h2>
-    <p class="sub aparece" style="margin-top:12px">Así se ve una obra desde el aire, del diseño a la entrega.</p>
+    <h2 class="titulo aparece">La obra desde el aire</h2>
+    <p class="sub aparece" style="margin-top:12px">Así se ve Patio Azul desde el dron: colado con olla de concreto, barda y alberca en proceso.</p>
     <div class="marco aparece">
-      <!-- VIDEO → <video src="video/patio-azul-del-render-a-la-obra.mp4" controls preload="none" poster="img/obras/patio-azul-dron.jpg"></video>
-           (o pega aquí el código de inserción del video de Facebook o YouTube) -->
-      <svg class="plano" viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="640" height="360" fill="#1B2D39"/><path d="M0 280 C 160 240, 320 300, 640 250 L640 360 L0 360Z" fill="#14212B"/></svg>
-      <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></span>
-      <span class="pie">Aquí va el video de Patio Azul</span>
+      <video src="video/patio-azul-dron.mp4" controls muted playsinline preload="none" poster="img/obras/patio-azul-dron.jpg" aria-label="Video con dron del avance de la obra Patio Azul en La Paz, BCS"></video>
     </div>
   </div>
 </section>
