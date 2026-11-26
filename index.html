@@ -222,6 +222,8 @@ form h3{font-size:22px}
 .campo input,.campo select,.campo textarea{font:inherit;font-size:16px;padding:12px 14px;border:1px solid #C9BFAF;border-radius:10px;background:var(--arena);color:var(--marino);min-height:48px}
 .campo input:focus,.campo select:focus,.campo textarea:focus{outline:3px solid rgba(0,65,117,.25);border-color:var(--acento)}
 .fila{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.contacto-grid>*,form>*,.fila>*,.campo{min-width:0}
+.campo input,.campo select,.campo textarea{width:100%;max-width:100%}
 @media (max-width:560px){.fila{grid-template-columns:1fr}}
 .nota{font-size:13px;color:var(--texto-2)}
 
